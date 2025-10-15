@@ -169,7 +169,7 @@
     <div class="top-bar">
       <div class="brand">
         <div class="brand-logo">
-          <img src="/assets/logo-sds25.png" alt="Logo Semana de Sistemas 2025">
+          <img src="/assets/slider/SDS1.png" alt="Logo Semana de Sistemas 2025">
         </div>
         <div class="brand-text">
           <h1>Semana de Sistemas 2025</h1>
