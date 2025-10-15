@@ -12,13 +12,13 @@ $scripts = isset($scripts) && is_array($scripts)
   <div class="home-slider__window">
     <ul class="home-slider__track">
       <li class="home-slider__item is-active">
-        <img src="/assets/slider/slide1.jpg" alt="Escenario principal del evento Semana de Sistemas con decoración SDS25">
+        <img src="/assets/slider/image1.jpeg" alt="Escenario principal del evento Semana de Sistemas con decoración SDS25">
       </li>
       <li class="home-slider__item">
-        <img src="/assets/slider/slide2.jpg" alt="Ponentes presentando en conferencia durante la Semana de Sistemas">
+        <img src="/assets/slider/image2.jpeg" alt="Ponentes presentando en conferencia durante la Semana de Sistemas">
       </li>
       <li class="home-slider__item">
-        <img src="/assets/slider/slide3.jpg" alt="Participantes colaborando en actividades tecnológicas">
+        <img src="/assets/slider/image3.jpeg" alt="Participantes colaborando en actividades tecnológicas">
       </li>
     </ul>
     <div class="home-slider__indicators" role="tablist">
