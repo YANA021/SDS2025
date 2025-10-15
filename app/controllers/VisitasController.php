@@ -1,7 +1,7 @@
 <?php
 namespace app\controllers;
 
-class HomeController {
+class VisitasController {
   private function render($view, $data = []) {
     extract($data);
     ob_start();
@@ -10,11 +10,11 @@ class HomeController {
     include "../app/views/layout.php";
   }
 
-  public function inicio(){
-    return $this->render('home', ['title' => 'Inicio']);
+  public function index() {
+    return $this->render('visitas', ['title' => 'Formulario de visitas']);
   }
-  public function miInfo() {
-    return $this->render('mi_info', ['title' => 'Mi información']);
+
+  public function registrar() {
+    echo "(pendiente)";
   }
- 
 }
