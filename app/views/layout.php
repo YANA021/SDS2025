@@ -37,38 +37,38 @@
     }
 
     header {
-      background:var(--surface);
-      border-bottom:1px solid rgba(9,28,74,.08);
-      box-shadow:0 4px 18px rgba(15,23,42,.08);
       position:sticky;
       top:0;
       z-index:20;
+      background:linear-gradient(135deg,#061226 0%,#0f4e58 38%,#0f766e 72%,#14b8a6 100%);
+      box-shadow:0 12px 32px rgba(6,18,38,.28);
+      border-bottom:1px solid rgba(12,64,80,.45);
     }
 
     .top-bar {
-      max-width:1080px;
+      max-width:1200px;
       margin:0 auto;
-      padding:18px 24px;
+      padding:22px 32px 18px;
       display:flex;
       justify-content:space-between;
       align-items:center;
-      gap:16px;
+      gap:24px;
     }
 
     .brand {
       display:flex;
       align-items:center;
-      gap:16px;
+      gap:18px;
     }
 
     .brand-logo {
-      width:56px;
-      height:56px;
-      border-radius:16px;
+      width:92px;
+      height:80px;
+      border-radius:18px;
       overflow:hidden;
-      box-shadow:0 10px 24px rgba(15,118,110,.28);
-      border:2px solid rgba(255,255,255,.8);
-      background:#0f1f33;
+      box-shadow:0 12px 26px rgba(15,118,110,.32);
+      border:3px solid rgba(255,255,255,.25);
+      background:#061226;
     }
 
     .brand-logo img {
@@ -81,81 +81,122 @@
     .brand-text {
       display:flex;
       flex-direction:column;
-      gap:4px;
+      gap:6px;
     }
 
     .brand-text h1 {
       margin:0;
-      font-size:1.4rem;
+      font-size:1.55rem;
       font-weight:700;
-      color:var(--primary);
-      letter-spacing:.03em;
+      color:#f4fffd;
+      letter-spacing:.035em;
       text-transform:uppercase;
     }
 
     .brand-text span {
-      font-size:.85rem;
-      color:var(--muted);
-      letter-spacing:.08em;
+      font-size:.88rem;
+      color:rgba(227,245,243,.9);
+      letter-spacing:.09em;
       text-transform:uppercase;
     }
 
+    .nav-bar {
+      width:100%;
+      background:rgba(5,24,35,.58);
+      backdrop-filter:blur(14px);
+      border-top:1px solid rgba(255,255,255,.08);
+      border-bottom:1px solid rgba(255,255,255,.12);
+      box-shadow:0 18px 36px rgba(6,18,38,.24);
+    }
+
     nav {
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
+      max-width:1200px;
+      margin:0 auto;
+      padding:14px 32px 18px;
+      display:grid;
+      grid-template-columns:repeat(8, minmax(0, 1fr));
+      gap:14px;
+      align-items:stretch;
     }
 
     nav a {
-      padding:10px 16px;
-      border-radius:999px;
-      font-size:.9rem;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px 18px;
+      border-radius:22px;
+      font-size:.95rem;
       font-weight:600;
-      color:#0f3d36;
-      background:rgba(20,184,166,.12);
-      transition:transform .2s ease,box-shadow .2s ease,background .2s ease,color .2s ease;
+      letter-spacing:.05em;
+      color:#f1fbf8;
+      background:rgba(255,255,255,.14);
+      border:1px solid rgba(255,255,255,.16);
+      white-space:nowrap;
+      transition:transform .25s ease,box-shadow .25s ease,background .25s ease,color .25s ease,border-color .25s ease;
     }
 
-    nav a:hover {
-      background:rgba(15,118,110,.14);
-      color:#0f766e;
-      box-shadow:0 8px 24px rgba(15,118,110,.18);
-      transform:translateY(-2px);
+    nav a:hover,
+    nav a:focus {
+      background:rgba(255,255,255,.24);
+      color:#041724;
+      border-color:rgba(255,255,255,.38);
+      box-shadow:0 14px 34px rgba(20,184,166,.45);
+      transform:translateY(-3px);
       text-decoration:none;
     }
 
     main {
-      max-width:1080px;
-      margin:48px auto;
-      padding:0 24px 64px;
+      max-width:1200px;
+      margin:56px auto;
+      padding:56px 48px 72px;
+      background:rgba(255,255,255,.94);
+      border-radius:36px;
+      box-shadow:0 40px 64px rgba(15,23,42,.18);
+      backdrop-filter:blur(4px);
     }
 
     footer {
       text-align:center;
-      padding:32px 16px 40px;
-      color:var(--muted);
+      padding:36px 16px 48px;
+      color:rgba(12,64,80,.72);
       font-size:.85rem;
+      background:linear-gradient(180deg,rgba(12,64,80,.08) 0%,rgba(12,64,80,.18) 100%);
+    }
+
+    @media (max-width:1024px) {
+      nav {
+        grid-template-columns:repeat(4, minmax(0, 1fr));
+      }
     }
 
     @media (max-width:768px) {
       .top-bar {
         flex-direction:column;
         align-items:flex-start;
+        gap:20px;
+        padding:20px 24px 16px;
       }
 
       nav {
-        width:100%;
+        padding:12px 24px 16px;
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+        gap:12px;
       }
 
       nav a {
-        flex:1 1 auto;
-        text-align:center;
+        font-size:.9rem;
+        padding:10px 16px;
       }
 
       main {
-        margin:32px auto;
-        padding:0 16px 48px;
+        margin:40px auto;
+        padding:36px 24px 56px;
       }
+
+      footer {
+        padding:32px 12px 40px;
+      }
+
     }
   </style>
   <?php if (!empty($styles) && is_array($styles)): ?>
@@ -176,6 +217,8 @@
           <span>Evento universitario &middot; Innovaci&oacute;n tecnol&oacute;gica</span>
         </div>
       </div>
+    </div>
+    <div class="nav-bar">
       <nav>
         <a href="/inicio">Inicio</a>
         <a href="/mi-info">Mi informaci&oacute;n</a>
