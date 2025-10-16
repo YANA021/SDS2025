@@ -37,9 +37,6 @@
     }
 
     header {
-      position:sticky;
-      top:0;
-      z-index:20;
       background:linear-gradient(135deg,#061226 0%,#0f4e58 38%,#0f766e 72%,#14b8a6 100%);
       box-shadow:0 12px 32px rgba(6,18,38,.28);
       border-bottom:1px solid rgba(12,64,80,.45);
