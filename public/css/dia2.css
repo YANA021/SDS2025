@@ -1,0 +1,250 @@
+.dia2 {
+  display:flex;
+  flex-direction:column;
+  gap:44px;
+  position:relative;
+}
+
+.dia2::before {
+  content:"";
+  position:absolute;
+  inset:-70px -60px -40px;
+  background:radial-gradient(circle at top left, rgba(59,130,246,.14), transparent 55%),
+             radial-gradient(circle at bottom right, rgba(16,185,129,.12), transparent 55%);
+  z-index:-1;
+}
+
+.dia2__encabezado {
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  padding:38px 40px;
+  border-radius:32px;
+  background:linear-gradient(140deg, rgba(37,99,235,.94), rgba(59,130,246,.92));
+  box-shadow:0 30px 64px rgba(15,23,42,.26);
+  color:#eff6ff;
+}
+
+.dia2__etiqueta {
+  align-self:flex-start;
+  font-size:.8rem;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  padding:6px 16px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.35);
+  background:rgba(255,255,255,.18);
+}
+
+.dia2__titulo {
+  margin:0;
+  font-size:2.35rem;
+  letter-spacing:.02em;
+  color:#f8fafc;
+}
+
+.dia2__descripcion {
+  margin:0;
+  max-width:720px;
+  font-size:1.04rem;
+  line-height:1.7;
+  color:rgba(239,246,255,.9);
+}
+
+.dia2__agenda {
+  display:flex;
+  flex-direction:column;
+  gap:32px;
+}
+
+.dia2__agenda-introduccion {
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  padding:0 2px;
+}
+
+.dia2__agenda-introduccion h2 {
+  margin:0;
+  font-size:2rem;
+  color:#0f172a;
+}
+
+.dia2__agenda-introduccion p {
+  margin:0;
+  max-width:760px;
+  font-size:1rem;
+  line-height:1.65;
+  color:#1f2937;
+}
+
+.dia2__talleres {
+  display:flex;
+  flex-direction:column;
+  gap:32px;
+}
+
+.dia2__taller {
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+  padding:36px 40px;
+  border-radius:32px;
+  background:linear-gradient(155deg, rgba(15,23,42,.96), rgba(30,64,175,.9));
+  border:1px solid rgba(59,130,246,.28);
+  box-shadow:0 28px 54px rgba(15,23,42,.22);
+  color:#f8fafc;
+}
+
+.dia2__taller-encabezado {
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:22px;
+  align-items:flex-start;
+}
+
+.dia2__taller-numero {
+  font-size:1.9rem;
+  font-weight:700;
+  color:#93c5fd;
+  letter-spacing:.08em;
+}
+
+.dia2__taller-meta {
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.dia2__taller-meta h3 {
+  margin:0;
+  font-size:1.6rem;
+  color:#f8fafc;
+}
+
+.dia2__taller-ponente {
+  margin:0;
+  font-size:.98rem;
+  color:#bfdbfe;
+  font-weight:600;
+}
+
+.dia2__taller-descripcion {
+  margin:0;
+  font-size:1rem;
+  line-height:1.65;
+  color:rgba(241,245,249,.9);
+}
+
+.dia2__taller-galeria {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  gap:16px;
+}
+
+.dia2__taller-imagen {
+  margin:0;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 22px 42px rgba(30,64,175,.24);
+  background:#0f172a;
+  aspect-ratio:4 / 3;
+}
+
+.dia2__taller-imagen img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.dia2__taller-insights {
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  padding:22px 24px;
+  border-radius:22px;
+  background:rgba(59,130,246,.22);
+  border:1px solid rgba(191,219,254,.35);
+}
+
+.dia2__taller-insights h4 {
+  margin:0;
+  font-size:1.1rem;
+  color:#e0f2fe;
+}
+
+.dia2__taller-insights ul {
+  margin:0;
+  padding-left:20px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  color:#e2e8f0;
+  font-size:.97rem;
+  line-height:1.6;
+}
+
+.dia2__taller-insights li {
+  margin:0;
+}
+
+@media (max-width:980px) {
+  .dia2__encabezado {
+    padding:32px 30px;
+    border-radius:28px;
+  }
+
+  .dia2__titulo {
+    font-size:2.05rem;
+  }
+
+  .dia2__taller {
+    padding:32px 30px;
+    border-radius:28px;
+  }
+
+  .dia2__taller-encabezado {
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  .dia2__taller-numero {
+    order:1;
+  }
+
+  .dia2__taller-meta {
+    order:2;
+  }
+}
+
+@media (max-width:640px) {
+  .dia2 {
+    gap:32px;
+  }
+
+  .dia2__encabezado {
+    padding:26px 22px;
+    border-radius:24px;
+  }
+
+  .dia2__titulo {
+    font-size:1.8rem;
+  }
+
+  .dia2__taller {
+    padding:26px 22px;
+    border-radius:24px;
+    gap:20px;
+  }
+
+  .dia2__taller-galeria {
+    grid-template-columns:repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .dia2__taller-insights {
+    padding:18px 20px;
+    border-radius:20px;
+  }
+}
