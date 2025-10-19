@@ -6,83 +6,55 @@ $styles = isset($styles) && is_array($styles)
 $workshops = [
   [
     'ponente' => 'MSc. Enrique Cortez',
-    'rol' => 'Consultor en analítica empresarial',
-    'titulo' => 'Taller #1: Toma de decisiones estratégicas basadas en datos',
-    'descripcion' => 'Exploramos métodos para transformar métricas en acciones estratégicas, desde la recolección hasta la visualización para líderes técnicos.',
+    'rol' => 'Consultor en analitica empresarial',
+    'titulo' => 'Taller #1: Toma de decisiones estrategicas basadas en datos',
+    'descripcion' => 'Vimos metodos para transformar metricas en acciones estrategicas, desde la recoleccion hasta la visualizacion para lideres tecnicos.',
     'imagenes' => [
-      [
-        'src' => '/assets/slider/primerap1.jpeg',
-      ],
-      [
-        'src' => '/assets/slider/primerap2.jpeg',
-      ],
-      [
-        'src' => '/assets/slider/primerap3.jpeg',
-      ],
-      [
-        'src' => '/assets/slider/primerap4.jpeg',
-      ],
+      ['src' => '/assets/slider/primerap1.jpeg'],
+      ['src' => '/assets/slider/primerap2.jpeg'],
+      ['src' => '/assets/slider/primerap3.jpeg'],
+      ['src' => '/assets/slider/primerap4.jpeg'],
     ],
     'insights' => [
-      'Diseñar tableros accionables requiere definir objetivos y audiencias antes de graficar.',
-      'La gobernanza de datos es tan importante como la tecnología usada para analizarlos.',
-      'Modelar hipótesis permite anticipar escenarios y reducir el riesgo en decisiones ejecutivas.',
+      'Un tablero util parte de objetivos claros, indicadores clave y un publico definido.',
+      'La gobernanza de datos pesa tanto como la herramienta analitica utilizada.',
+      'Probar hipotesis ayuda a anticipar escenarios y reducir la incertidumbre ejecutiva.',
     ],
   ],
   [
     'ponente' => 'Ing. Gabriel Castillo',
     'rol' => 'Desarrollador full-stack y mentor de Laravel',
     'titulo' => 'Taller #2.2: Construyendo un CRUD en minutos con Laravel y Filament',
-    'descripcion' => 'El laboratorio mostró cómo combinar scaffolding de Laravel con componentes de Filament para acelerar proyectos administrativos.',
+    'descripcion' => 'El laboratorio mostro como combinar scaffolding de Laravel con componentes de Filament para acelerar proyectos administrativos.',
     'imagenes' => [
-      [
-        'src' => '/assets/slider/segunda1.jpeg',
-      ],
-      [
-        'src' => '/assets/slider/segunda2.jpeg',
-      ],
-      [
-        'src' => '/assets/slider/segunda3.jpeg',
-      ],
-      [
-        'src' => '/assets/slider/segunda4.jpeg',
-      ],
-      [
-        'src' => '/assets/slider/segunda5.jpeg',
-      ],
-      [
-        'src' => '/assets/slider/segunda6.jpeg',
-      ],
-      [
-        'src' => '/assets/slider/segunda7.jpeg',
-      ],
+      ['src' => '/assets/slider/segunda1.jpeg'],
+      ['src' => '/assets/slider/segunda2.jpeg'],
+      ['src' => '/assets/slider/segunda3.jpeg'],
+      ['src' => '/assets/slider/segunda4.jpeg'],
+      ['src' => '/assets/slider/segunda5.jpeg'],
+      ['src' => '/assets/slider/segunda6.jpeg'],
+      ['src' => '/assets/slider/segunda7.jpeg'],
     ],
     'insights' => [
-      'Filament permite generar paneles con recursos CRUD en cuestión de minutos.',
-      'El versionamiento correcto de migraciones evita conflictos al escalar módulos.',
-      'Vue y Livewire se integran fácilmente para enriquecer componentes interactivos.',
+      'Filament permite tener recursos CRUD operativos en cuestion de minutos.',
+      'Mantener migraciones versionadas evita choques cuando el sistema crece.',
+      'Vue y Livewire se integran sin friccion para enriquecer el panel administrativo.',
     ],
   ],
   [
-    'ponente' => 'MSc. José Salmerón',
-    'rol' => 'Especialista en automatización con IA multimodal',
-    'titulo' => 'Taller #4: IA MULTIMODAL: creando el futuro visual e inteligente con n8n',
-    'descripcion' => 'Descubrimos cómo orquestar flujos que transforman texto en imágenes y automatizan tareas creativas con n8n y servicios generativos.',
+    'ponente' => 'MSc. Jose Salmeron',
+    'rol' => 'Especialista en automatizacion con IA multimodal',
+    'titulo' => 'Taller #4: IA multimodal creando el futuro visual e inteligente con nos',
+    'descripcion' => 'Descubrimos como orquestar flujos que transforman texto en imagenes y automatizan tareas creativas con nos y servicios generativos.',
     'imagenes' => [
-      [
-        'src' => '/assets/slider/tercera1.jpeg',
-      ],
-      [
-        'src' => '/assets/slider/tercera2.jpeg',
-      ],
-      [
-        'src' => '/assets/slider/tercera3.jpeg',
-      ],
+      ['src' => '/assets/slider/tercera1.jpeg'],
+      ['src' => '/assets/slider/tercera2.jpeg'],
+      ['src' => '/assets/slider/tercera3.jpeg'],
     ],
     'insights' => [
-      'Los flujos multimodales requieren definir permisos y límites de uso para cada servicio.',
-      'n8n facilita convertir prompts en procesos automatizados sin perder control técnico.',
-      'Las aplicaciones generativas se potencian al integrar retroalimentación humana en el ciclo.',
+      'Los flujos multimodales requieren definir limites y permisos por servicio.',
+      'nos convierte prompts en procesos automatizados sin perder control tecnico.',
+      'Las soluciones generativas mejoran al sumar retroalimentacion humana continua.',
     ],
   ],
 ];
@@ -90,10 +62,10 @@ $workshops = [
 
 <section class="dia2">
   <header class="dia2__encabezado">
-    <span class="dia2__etiqueta">Día 2</span>
+    <span class="dia2__etiqueta">Dia 2</span>
     <h1 class="dia2__titulo">Talleres formativos</h1>
     <p class="dia2__descripcion">
-      Expertos compartieron metodologías hands-on para convertir ideas en soluciones ágiles orientadas a datos, desarrollo rápido e inteligencia artificial multimodal.
+      Mentores compartieron practicas hands-on para convertir ideas en soluciones orientadas a datos, desarrollo rapido e inteligencia artificial multimodal.
     </p>
   </header>
 
@@ -101,7 +73,7 @@ $workshops = [
     <div class="dia2__agenda-introduccion">
       <h2>Agenda de aprendizaje</h2>
       <p>
-        Cada bloque combinó teoría aplicada con ejercicios prácticos guiados por mentores. Las galerías recogen los momentos más destacados de la jornada.
+        Cada bloque combino teoria aplicada con ejercicios guiados. Las galerias documentan los momentos mas representativos del dia.
       </p>
     </div>
 
