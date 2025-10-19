@@ -202,9 +202,6 @@ $pupusasGaleria = [
   <section class="dia4__pupusas-premiacion" id="dia4-pupusas-premiacion">
     <div class="dia4__seccion-encabezado dia4__seccion-encabezado--pupusas">
       <h2 class="dia4__seccion-titulo">Premiación de la Pupuseada</h2>
-      <p class="dia4__seccion-resumen">
-        Reconocimos a quienes lideraron el reto de pupusas con entusiasmo y mucho apetito.
-      </p>
     </div>
     <div class="dia4__pupusas-premios">
       <article class="dia4__pupusas-card">
